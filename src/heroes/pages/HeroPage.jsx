@@ -15,13 +15,12 @@ export const HeroPage = () => {
   if (!hero){ return <Navigate to="/marvel" />;}
 
   return (
-    <div className='="row mt-5'>
+    <div className="row mt-5">
       <div className="col-4 animate__animated animate__fadeInLeft">
         <img src={`/assets/heroes/${id}.jpg`}
-        alt={hero.superhero} className='img-thumbnail'/>
+        alt={hero.superhero} className='img-thumbnail' />
       </div>
-      <div>
-        <div className="col-8">
+      <div className="col-8">
           <h3>{hero.superhero}</h3>
           <ul className='list-group list-group-flush'>
             <li className='list-group-item'> <b> Alter ego: </b> {hero.alter_ego}</li>
@@ -34,6 +33,5 @@ export const HeroPage = () => {
           onClick={onNavigateBack}>Back</button>
         </div>
       </div>
-    </div>
   )
 }
