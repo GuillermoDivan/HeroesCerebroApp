@@ -1,10 +1,10 @@
+import { AuthProvider } from "./auth"
 import { AppRouter } from "./router/AppRouter"
 
 export const CerebroApp = () => {
   return (
-    <>
-    <h1>CerebroApp</h1>
+    <AuthProvider>
     <AppRouter />
-    </>
+    </AuthProvider>
   )
 }
